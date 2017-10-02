@@ -2,22 +2,22 @@
 
 include "class.phpmailer.php";// подключаем класс
 
-$message = "Регистрация Фестиваль скорости RTR 2017: <br>";
+$message = "Боевая класика Жигули всегда <br>";
 $message .= "Имя: {$_POST['name']} <br>";
+$message .= "Авто/стенд: {$_POST['stend']} <br>";
+$message .= "Авто / Марка / Модель: {$_POST['mark']} <br>";
 $message .= "Телефон: {$_POST['phone']} <br>";
 $message .= "Email: {$_POST['email']} <br>";
-$message .= "Марка авто: {$_POST['mark']} <br>";
-$message .= "Номинация: {$_POST['nom']} <br>";
-$message .= "Почему ты считаешь: {$_POST['why']} <br>";
+$message .= "Почему твой Жигуль: {$_POST['why']} <br>";
 $message .= "Комментарий: {$_POST['comment']} <br>";
 
 
 $mail = new PHPMailer();
-$mail->From = 'tuningshow@rtr.ua';
-$mail->FromName = 'Фестиваль скорости RTR 2017';
+$mail->From = 'vaz.expo@yandex.ru';
+$mail->FromName = 'Боевая класика "Жигули всегда"';
 $mail->AddAddress("litvin.andriy91@gmail.com"); // имейл
 $mail->IsHTML(true);
-$mail->Subject = "Фестиваль скорости"; // тема письма
+$mail->Subject = "ЗАЯВКА НА УЧАСТИЕ "; // тема письма
 
 if(isset($_FILES)) {
 	$mail->AddAttachment($_FILES['photo_1']['tmp_name'], $_FILES['photo_1']['name']);
@@ -34,5 +34,5 @@ if(!$mail->send()) {
     echo '<h2>Message could not be sent.</h2>';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 }
-header('Location: /thanks.html');
+header('Location: thanks.html');
 ?>
