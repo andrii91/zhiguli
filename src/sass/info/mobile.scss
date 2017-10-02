@@ -1,0 +1,146 @@
+& {
+  .logo {
+    float: none;
+    text-align: center;
+  }
+  .logo-zhiguli {
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .head {
+    text-align: center;
+    background: url(../images/head.png) no-repeat center top;
+  }
+  .head-title {
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  .what-container {
+    padding: 0 15px;
+  }
+  section {
+    overflow: hidden;
+  }
+  .what {
+    padding-bottom: 30px;
+  }
+  .nomination {
+    text-align: center;
+
+  }
+
+  .nomination-list li div:nth-child(2),
+  .nomination-list li:nth-child(even) div:nth-child(2) {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+  }
+  .nomination-list li div:nth-child(1) {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: right;
+  }
+  .nomination-list li div img {
+    display: none;
+  }
+  .nomination-list li {
+    padding: 0 15px;
+  }
+  .program-title {
+    font-size: 25px;
+    line-height: 1;
+  }
+
+.program-box {
+    max-width: 740px;
+    background-color: rgba(0,0,0,.82);
+    padding: 30px 0 30px 5%;
+    -webkit-clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+}
+  .program-list {
+    padding: 0;
+  }
+  .program-list li {
+    text-align: center;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .info {
+    padding: 25px 0;
+  }
+  .info-title {
+    font-size: 20px;
+    line-height: 1;
+}
+  .info-date {
+    line-height: 1;
+  }
+  .img-box img {
+    height: 100%;
+    border: 5px solid #9ba1a6;
+    max-height: 66px;
+}
+  .guarantees-title, .location-title, .partners-title, .answers-title, .question-title {
+    font-size: 25px;
+    line-height: 1;
+}
+  .guarantees-list li {
+    text-align: center;
+    span {
+      display: block;
+      line-height: 1;
+    }
+    img {
+      margin-right: 0;
+    }
+  }
+  .participate .title {
+    font-size: 25px;
+  }
+  .participate .content {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .partners-list li {
+    height: 100%;
+  }
+  .answers-carousel li h4:after {
+    background-size: 56%;
+  }
+  .answers-carousel li {
+    display: block;
+    padding-left: 60px;
+    padding-right: 45px;
+    margin-top: 30px;
+    position: relative;
+    transition: .2s;
+    counter-increment: list;
+}
+  .answers-carousel li h4 {
+    cursor: pointer;
+    color: #fff;
+    font-family: "Gotham Pro";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: uppercase;
+    position: relative;
+}
+  .answers-carousel li .more {
+    font-size: 12px;
+    line-height: 1;
+    text-align: justify;
+    display: none;
+}
+  .social .list li {
+    margin: 25px;
+  }
+  .social-title {
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../mq';
+
+@media #{$desktopHD} {
+  @import '../desktop';
+  & {
+    .program-box {
+      padding-left: 7%;
+    }
+    .head {
+      min-height: 100vh;
+    }
+
+  }
+}
